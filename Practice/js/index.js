@@ -188,7 +188,14 @@ console.log(example); */
 
 // Import and export
 
-import { data } from "./example.js";
+/* import { data } from "./example.js";
 const updatedData = data;
 updatedData.push(5);
-console.log(updatedData);
+console.log(updatedData); */
+
+// PadStart and padEnd
+
+/* let example = "Merilyn";
+
+console.log(example.padStart(10, 'M'));
+console.log(example.padEnd(12, 'n')); */

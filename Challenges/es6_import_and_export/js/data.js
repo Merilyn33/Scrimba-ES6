@@ -10,7 +10,7 @@ Make sure to export this function.
 - print into the console the value of the variable result;
 
 */
-export {add};
+/* export {add};
 function add(num1, num2){
     return num1 + num2
-}
+} */

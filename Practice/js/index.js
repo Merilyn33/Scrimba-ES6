@@ -167,3 +167,7 @@ add(); */
 
 leadSinger("Chris Martin"); */
 
+// includes
+
+const numArray = [1, 2, 3, 4, 5, 6];
+console.log(numArray.includes(7));

@@ -74,8 +74,96 @@ for (const income of incomes) {
 }
 console.log(total); */
 
-const fullName = "Merilyn Merisalu";
+/* const fullName = "Merilyn Merisalu";
 
 for(let char of fullName) {
     console.log(char);
+} */
+
+// Spread operator
+
+/* let contacts = ["Mary", "Joel", "Danny"];
+let personalFriends = ["David",...contacts, "Lily"];
+contacts.push("John");
+console.log(personalFriends); */
+
+/* let person = {
+    name: "Adam",
+    age: 25,
+    city: "Manchester"
+};
+
+let employee =  {
+    ...person,
+    salary: 50000,
+    position: "Software Developer"
+};
+
+console.log(employee);
+ */
+
+/* let example1 = [1, 2, 3, 4, 5, 6];
+let example2 = [...example1];
+example2.push(true);
+console.log(example1); */
+
+/* let example1 = {
+    name: "Merilyn"
+};
+let example2 = {
+    ...example1
+} */
+
+/* Rest operator */
+
+/* function add(...nums) {
+    console.log(nums);
 }
+add(1, 7, 19, 23, 30); */
+
+// Arrow functions
+
+ /* function add(...nums) {
+    let total = nums.reduce(function(x,y) {
+        return x + y;
+    }) 
+    console.log(total); */
+//}
+/* function add(...nums) {
+    let total = nums.reduce((x, y) => x + y)
+    return total;
+}
+
+console.log(add(4, 5, 7, 8, 12));  */
+
+//function declaration
+/* function breakfastMenu() {
+    return "I'm going to scrambled eggs for breakfast";
+}
+
+//anonymous function
+const lunchMenu = function() {
+    return "I'm going to eat pizza for lunch";
+}
+
+const dinnerMenu = food =>`I'm going to eat a ${food} for dinner.`;
+
+console.log(dinnerMenu("chicken salad")); */
+
+// default parameters
+
+/* function add(numArray = []) {
+    let total = 0;
+    numArray.forEach(element => {
+        total += element;
+    } )
+    
+}
+add(); */
+
+/* const leadSinger = (artist="someone") => {
+    console.log(`${artist} is the lead singer of Cold Play`);
+}
+
+leadSinger("Chris Martin"); */
+

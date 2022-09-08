@@ -169,5 +169,26 @@ leadSinger("Chris Martin"); */
 
 // includes
 
-const numArray = [1, 2, 3, 4, 5, 6];
+/* const numArray = [1, 2, 3, 4, 5, 6];
 console.log(numArray.includes(7));
+ */
+
+// Let and const
+
+/* if (false) {
+    let example3 = 5;
+}
+console.log(example3) */
+
+/* const example = 3;
+example = 5;
+console.log(example); */
+
+/* The values of arrays and objects are mutable but their types are immutable */
+
+// Import and export
+
+import { data } from "./example.js";
+const updatedData = data;
+updatedData.push(5);
+console.log(updatedData);

@@ -202,9 +202,9 @@ console.log(example.padEnd(12, 'n')); */
 
 // Classes
 
-import { Animal } from "./animal.js";
+/* import { Animal } from "./animal.js";
 import {Cat} from "./cat.js";
-let mammal = new Animal();
+let mammal = new Animal(); */
 /* cat.legs = 3;
 cat.makeSound();
 cat.makeSound("Meow");
@@ -215,6 +215,35 @@ console.log(Animal.return10()) */
 
 //console.log(cat.metaData);
 
-let cat = new Cat("Cat", 4);
+/* let cat = new Cat("Cat", 4);
 cat.makeSound();
-console.log(cat.metaData);
+console.log(cat.metaData); */
+
+// Trailing Commas
+
+/* function add(param1,) {
+    const example = {
+        name: "Merilyn",
+    };
+    console.log(example);
+}
+add(2); */
+
+// Promises
+
+const buyFlightTicket = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const error = false;
+            if(error) {
+                reject("Your payment was not successful!");
+            }
+            else {
+                resolve("Thank you, your payment was successful");
+            }
+        }, 3000);
+    }
+)}
+buyFlightTicket()
+.then( (success) => console.log(success))
+.catch( (error) => console.log(error));

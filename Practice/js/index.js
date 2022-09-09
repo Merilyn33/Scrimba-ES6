@@ -199,3 +199,22 @@ console.log(updatedData); */
 
 console.log(example.padStart(10, 'M'));
 console.log(example.padEnd(12, 'n')); */
+
+// Classes
+
+import { Animal } from "./animal.js";
+import {Cat} from "./cat.js";
+let mammal = new Animal();
+/* cat.legs = 3;
+cat.makeSound();
+cat.makeSound("Meow");
+console.log(cat);
+console.log(cat.legs);
+console.log(cat.type);
+console.log(Animal.return10()) */
+
+//console.log(cat.metaData);
+
+let cat = new Cat("Cat", 4);
+cat.makeSound();
+console.log(cat.metaData);

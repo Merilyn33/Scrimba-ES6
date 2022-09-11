@@ -231,7 +231,7 @@ add(2); */
 
 // Promises
 
-const buyFlightTicket = () => {
+/* const buyFlightTicket = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             const error = false;
@@ -246,4 +246,59 @@ const buyFlightTicket = () => {
 )}
 buyFlightTicket()
 .then( (success) => console.log(success))
-.catch( (error) => console.log(error));
+.catch( (error) => console.log(error)); */
+
+
+/**
+ * Fetch
+ * 
+ * RESTFul API - https://jsonplaceholder.typicode.com/
+ * Docs - https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+ */
+// GET
+/* fetch('https://jsonplaceholder.typicode.com/comments/1')
+    .then(reponse => reponse.json())
+    .then(data => console.log(data));
+ */
+// POST
+/* fetch('https://jsonplaceholder.typicode.com/comments', {
+        method: "POST",
+        body: JSON.stringify({
+            postId: 1,
+            name: "Merilyn",
+            email: "merilyn@gmail.com",
+            body: "It was dope!"
+        })
+})
+.then(response => response.json())
+    .then(data => console.log(data)); */
+
+// Async and await
+
+
+/* const photos = [];
+
+async function photoUpload() {
+    let uploadStatus = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            photos.push("Profile Photo");
+            resolve("Photo uploaded!");
+        }, 3000)
+    })
+    let result = await uploadStatus;
+    console.log(result);
+    console.log(photos.length);
+}
+
+photoUpload(); */
+
+// Sets
+/* const exampleSet = new Set([1,1,1,2,2, 3]);
+console.log(exampleSet.size);
+exampleSet.add(5);
+console.log(exampleSet.size);
+console.log(exampleSet.has(5));
+exampleSet.delete(5);
+console.log(exampleSet.has(5));
+
+ */

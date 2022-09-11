@@ -7,4 +7,26 @@
  * 
  * Docs - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 */
+const userData = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(
+            () => {
+                const error = false;
+                if(error) {
+                    reject("User data was not found!");
+                }
+                else {
+                    resolve( {
+                        name: "Merilyn Merisalu",
+                        age: 29,
+                        gender: "Female"
+                    });
+                }
+            }, 3000 );
+        
+    });
+} 
 
+userData()
+.then(resolve => console.log(resolve))
+.catch(error => console.log(error)); 
